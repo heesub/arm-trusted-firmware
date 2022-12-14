@@ -595,7 +595,7 @@ void bsec_write_debug_conf(uint32_t val)
 	}
 
 	bsec_lock();
-	mmio_write_32(bsec_base + BSEC_DEN_OFF, val & BSEC_DEN_ALL_MSK);
+	mmio_write_32(bsec_base + BSEC_DEN_OFF, val);
 	bsec_unlock();
 }
 
