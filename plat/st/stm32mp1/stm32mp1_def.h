@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015-2022, ARM Limited and Contributors. All rights reserved.
+ * Copyright (c) 2015-2023, ARM Limited and Contributors. All rights reserved.
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
@@ -380,9 +380,11 @@ enum ddr_type {
 #if STM32MP13
 #define NAND_OTP			"cfg9_otp"
 #define NAND2_OTP			"cfg10_otp"
+#define SSP_OTP				"cfg9_otp"
 #endif
 #if STM32MP15
 #define NAND_OTP			"nand_otp"
+#define SSP_OTP				"ssp_otp"
 #endif
 #define MONOTONIC_OTP			"monotonic_otp"
 #define UID_OTP				"uid_otp"
@@ -390,7 +392,6 @@ enum ddr_type {
 #define ENCKEY_OTP			"enckey_otp"
 #define BOARD_ID_OTP			"board_id"
 #define CFG2_OTP			"cfg2_otp"
-#define SSP_OTP				"ssp_otp"
 #define CHIP_CERTIFICATE_OTP		"chip_otp"
 #define RMA_OTP				"rma_otp"
 
