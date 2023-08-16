@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2015-2021, ARM Limited and Contributors. All rights reserved.
+# Copyright (c) 2015-2023, Arm Limited and Contributors. All rights reserved.
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
@@ -15,7 +15,7 @@ USE_COHERENT_MEM	:=	0
 STM32MP_USE_STM32IMAGE	?=	0
 
 # Add specific ST version
-ST_VERSION 		:=	r2.2
+ST_VERSION 		:=	r2.3
 ifeq ($(STM32MP_USE_STM32IMAGE),1)
 ST_VERSION 		:=	${ST_VERSION}-nofip
 endif
